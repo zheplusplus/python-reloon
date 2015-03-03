@@ -2,6 +2,11 @@
 
 A collection of various Python regular expressions.
 
+## Install
+
+    pip install reloon
+    easy_install reloon
+
 ## Examples
 
     from reloon import ANYTHING
