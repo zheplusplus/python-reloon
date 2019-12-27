@@ -4,7 +4,7 @@ _URI = 'https://github.com/neuront/python-reloon'
 
 setup(
     name='reloon',
-    version='0.1.0',
+    version='0.2.0',
     author='Neuron Teckid',
     author_email='lene13@gmail.com',
     license='BSD',

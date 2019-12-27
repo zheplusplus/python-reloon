@@ -4,8 +4,13 @@ A collection of various Python regular expressions.
 
 ## Install
 
+For Python3
+
     pip install reloon
-    easy_install reloon
+
+For Python2
+
+    pip install reloon==0.1.0
 
 ## Examples
 
