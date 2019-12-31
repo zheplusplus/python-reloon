@@ -65,9 +65,9 @@ class R(unittest.TestCase):
         self.assert_match(DOMAIN_X, 'example.org')
         self.assert_not_match(DOMAIN_X, 'example')
 
-        self.assert_match(DOMAIN_UNICODE_X, u'example.汉')
+        self.assert_match(DOMAIN_UNICODE_X, 'example.汉')
         self.assert_match(DOMAIN_UNICODE_X, 'example.org')
-        self.assert_not_match(DOMAIN_UNICODE_X, u'ドメイン')
+        self.assert_not_match(DOMAIN_UNICODE_X, 'ドメイン')
         self.assert_not_match(DOMAIN_UNICODE_X, 'example')
 
         self.assert_match(EMAIL_X, 'someone@example.org')

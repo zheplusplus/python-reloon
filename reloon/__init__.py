@@ -1,5 +1,6 @@
+import re
+
 def _re(s):
-    import re
     return re.compile(s), re.compile('^' + s + '$')
 
 ANYTHING, _ = _re('.*')
@@ -22,7 +23,7 @@ _DOMAIN_CHAR = '-a-zA-Z0-9'
 _DOMAIN_UCHAR = _DOMAIN_CHAR + (u'\u0370-\u1CDF' u'\u2C00-\u30FF'
                                 u'\u4E00-\u9FBF')
 _DOMAIN = r'([{c}]+\.[{c}.]+)'.format(c=_DOMAIN_CHAR)
-_DOMAIN_UNICODE = ur'([{c}]+\.[{c}.]+)'.format(c=_DOMAIN_UCHAR)
+_DOMAIN_UNICODE = r'([{c}]+\.[{c}.]+)'.format(c=_DOMAIN_UCHAR)
 
 DOMAIN, DOMAIN_X = _re(_DOMAIN)
 DOMAIN_UNICODE, DOMAIN_UNICODE_X = _re(_DOMAIN_UNICODE)
