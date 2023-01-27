@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "reloon"
+description = "A collection of common regular expressions in Python"
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+dynamic = ["version"]
+
+[tool.setuptools.packages.find]
+exclude = ["tests"]
+
+[tool.setuptools.dynamic]
+version = {attr = "reloon.version.version"}
