@@ -4,13 +4,7 @@ A collection of various Python regular expressions.
 
 ## Install
 
-For Python3
-
     pip install reloon
-
-For Python2
-
-    pip install reloon==0.1.0
 
 ## Examples
 
@@ -24,12 +18,12 @@ For Python2
     # True
     print(INT.match('123a') is not None)
     # True
-    print(INT_X.match('123a') is not None)
-    # False
+    print(INT_X.match('123a') is None)
+    # True
 
 ## Usage
 
-Each name in this package is a regular expression. Regexes whose name ends up with `_X` means it matches entire string.
+Each name in this package is a regular expression. Regexes whose names end up with `_X` match entire strings.
 
 List of all regexes
 
