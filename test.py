@@ -1,5 +1,3 @@
-# encoding=utf-8
-
 import unittest
 from reloon import *
 
@@ -78,11 +76,11 @@ class R(unittest.TestCase):
         self.assert_not_match(EMAIL_X, '@example.com')
         self.assert_not_match(EMAIL_X, 'a b@example.com')
         self.assert_not_match(EMAIL_X, 'someone@example')
-        self.assert_not_match(EMAIL_X, u'someone@example.漢')
+        self.assert_not_match(EMAIL_X, 'someone@example.漢')
 
-        self.assert_match(EMAIL_UNICODE_X, u'someone@example.漢')
-        self.assert_groups(EMAIL_UNICODE, u'someone@example.漢',
-                           'someone', u'example.漢')
+        self.assert_match(EMAIL_UNICODE_X, 'someone@example.漢')
+        self.assert_groups(EMAIL_UNICODE, 'someone@example.漢',
+                           'someone', 'example.漢')
 
         self.assert_match(IPV4_X, '172.16.254.1')
         self.assert_match(IPV4_X, '1.2.3.4')
