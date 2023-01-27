@@ -11,7 +11,7 @@ Upgrade to `pip>=22.3` or you have to specify an older version to install.
 
     pip install reloon==0.2.0
 
-Regexes in `0.3.0` has no difference from those in `0.2.0`.
+Regexes in `0.3.0` are the same as those in `0.2.0`.
 
 ## Examples
 
